@@ -11,8 +11,9 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -22,26 +23,29 @@
             <nav id="spy">
                 <ul class="sidebar-nav nav">
                     <li class="sidebar-brand">
-                        <a href="#home"><span class="fa fa-home solo">Cek Status</span></a>
+                        <span class="brand-text">SERVICE CENTER<span>
+                    </li>
+                    <li>
+                        <a href="#home"><span class="fa fa-search solo"><b>Cek Status</b></span></a>
                     </li>
                     <li>
                         <a href="#anch1" data-scroll>
-                            <span class="fa fa-anchor solo">Tambah Data</span>
+                            <span class="fa fa-plus solo"><b>Tambah Data</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="#anch2" data-scroll>
-                            <span class="fa fa-anchor solo">Data HP</span>
+                            <span class="fa fa-table solo"><b>Data HP</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="#anch3" data-scroll>
-                            <span class="fa fa-anchor solo">Laporan</span>
+                            <span class="fa fa-book solo"><b>Laporan</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="#anch4" data-scroll>
-                            <span class="fa fa-anchor solo">Anggota</span>
+                            <span class="fa fa-user solo"><b>Anggota</b></span>
                         </a>
                     </li>
                 </ul>
@@ -52,10 +56,9 @@
         <div id="page-content-wrapper">
             <div class="content-header">
                 <h1 id="home">
-                    <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
-                        <i class="fa fa-bars"></i>
+                    <a id="menu-toggle" href="#">
+                        <span class="fa fa-bars"></span>
                     </a>
-                    SERVICE CENTER
                 </h1>
             </div>
 
