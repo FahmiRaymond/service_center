@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="<?php echo e(app()->getLocale()); ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
+    <link href="<?php echo e(asset('css/sidebar.css')); ?>" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -108,9 +108,9 @@
 
     </div>
     
-    {{--  @yield('content')  --}}
+    
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/sidebar.js') }}"></script>
+    <script src="<?php echo e(asset('js/app.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/sidebar.js')); ?>"></script>
 </body>
 </html>
